@@ -1,4 +1,4 @@
-# DOC: Deep OCclusion from a single image
+# DOC: Deep OCclusion from a single image [PDF](https://arxiv.org/abs/1511.06457)
 
 By Peng Wang
 
@@ -44,7 +44,7 @@ Please use the way you like (either python or matlab) to forward the pre-compute
 
 To download the full pre-computed orientation maps and edge maps for PIOD, you may down load from [here](https://drive.google.com/file/d/0B7DaWBKShuMBdWV3NzVyd0pGZjA/view?usp=sharing) and unzip it under the output folder to view all the occlusion edges.
 
-For BSDS, the results and models are sitll under cleaning and will be released later. (But you may use our released code to retrain, tune in order to get the results)
+For BSDS, the results and models are sitll under cleaning and will be released later. (But you may use our released code to retrain from the converted orientation representation of the BSDS ownership data [here](https://drive.google.com/open?id=0B7DaWBKShuMBd3Z0Vmk3UkZxcUU), tune in order to get the results)
 
 ### Training
 
