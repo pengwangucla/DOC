@@ -39,13 +39,13 @@ To run it:
 4. open matlab and run $root/demo_occ.m
 
 For extracting the two maps (edge map and orientation map):
-For PIOD, we provide pre-trained orientation and edge models for [PIOD](https://drive.google.com/open?id=0B7DaWBKShuMBN0drTzRRMlpoTmc).
-Please use the way you like (either python or matlab) to forward the pre-computed model. With the image transform as HED.
+For PIOD, we provide pre-trained orientation and edge models for [PIOD](https://drive.google.com/open?id=0B7DaWBKShuMBN0drTzRRMlpoTmc). Since I use separate c++ code for network forward which is not directly hooked up with matlab, so I saved out the pre-computed result maps. Please use the way you like (either python or matlab) to forward the pre-computed model. With the image transform same as HED.
 
 To download the full pre-computed orientation maps and edge maps for PIOD, you may down load from [here](https://drive.google.com/file/d/0B7DaWBKShuMBdWV3NzVyd0pGZjA/view?usp=sharing) and unzip it under the output folder to view all the occlusion edges.
 
 For BSDS, the results and models are sitll under cleaning and will be released later. (But you may use our released code to retrain from the converted orientation representation of the BSDS ownership data [here](https://drive.google.com/open?id=0B7DaWBKShuMBd3Z0Vmk3UkZxcUU), tune in order to get the results)
 
+ 
 ### Training
 
 Please follow the augmentation in HED for edge and orientation training using the sigmoid cross entropy loss and orientation loss. (Notice you may need to re-compute orientation for augmentation.)
