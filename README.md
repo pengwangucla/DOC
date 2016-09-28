@@ -13,6 +13,8 @@ To train and test DOC, we construct an instance occlusion boundary dataset using
 This code has been tested on Linux (Ubuntu 14.04), Matlab 2014b using K40/Titian X GPUs.
 The caffe code is built based on [HED](https://github.com/s9xie/hed),  with extended hdf5 data reader and orientation loss metioned in our paper.
 
+For edge NMS, we take use of that from [edge box](https://github.com/pdollar/edges) and [piotr's toolbox](https://github.com/pdollar/toolbox). If you can not run, please recompile the edge nms part from the source.
+
 ### PASCAL Instance Occlusion Dataset (PIOD)
 
 You may download the dataset from [here](https://drive.google.com/file/d/0B7DaWBKShuMBSkZ6Mm5RVmg5ck0/view?usp=sharing). Please follow the readme and use the toolkit inside for observing the occlusion labelling.
@@ -21,10 +23,12 @@ The visualization code is developed based on the work of [Hoiem et.al iccv07](ht
 For getting the original images, please download from the PASCAL official website.
 
 ### Demo
-
 We release a demo code how to generate occlusion edge maps for a single scale image after the provided the orientation map and edge map.
 
-Please first download the dataset and put it under $root/data/, unzip it and then run $root/demo_occ.m
+Please first download the dataset and put it under $root/data/, unzip it
+Download [piotr's toolbox](https://github.com/pdollar/toolbox) to $root/tools/
+Download [edge box](https://github.com/pdollar/edges) and re-compile the boxes.
+then run $root/demo_occ.m
 
 For extracting the two maps (edge map and orientation map):
 
