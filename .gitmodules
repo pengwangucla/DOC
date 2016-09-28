@@ -1,6 +1,0 @@
-[submodule "tools/piotr_toolbox"]
-	path = tools/piotr_toolbox
-	url = https://github.com/pdollar/toolbox
-[submodule "tools/edges"]
-	path = tools/edges
-	url = https://github.com/pdollar/edges
