@@ -24,7 +24,7 @@ For getting the original images, please download from the PASCAL official websit
 
 We release a demo code how to generate occlusion edge maps for a single scale image after the provided the orientation map and edge map.
 
-Please first download the dataset and put it under $root/data, then run $root/demo_occ.m
+Please first download the dataset and put it under $root/data/, unzip it and then run $root/demo_occ.m
 
 For extracting the two maps (edge map and orientation map):
 
