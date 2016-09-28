@@ -1,4 +1,5 @@
 addpath('./lib')
+addpath(genpath('./tools'))
 
 dataset='PIOD';
 set_path

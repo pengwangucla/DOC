@@ -1,8 +1,7 @@
 function doc_res = im2occedge(occ_file, edge_file, varargin)
 
-model = struct('method', 'hed', 'resize_method', 'warp', ...,
-    'scales', 1, 'thresh', 0.7, 'correct_theta', 1, 'occ_normalized',...,
-    0, 'vis', 0, 'imsize', [], 'o_name', 'occmap', 'e_name', 'edgemap');
+model = struct('scales', 1, 'thresh', 0.7, 'occ_normalized',...,
+    0, 'imsize', []);
 model = CatVarargin(model, varargin);
 
 docmaps = cell(length(model.scales),2);
