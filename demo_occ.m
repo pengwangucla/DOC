@@ -1,5 +1,4 @@
 addpath('./lib')
-cmap = VOClabelcolormap();
 
 dataset='PIOD';
 set_path
