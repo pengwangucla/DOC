@@ -30,13 +30,11 @@ for iimg = 1:length(image_list)
     subplot_tight(r,c,4); imagesc(doc_res{1,2});
     colormap(parula(100));  axis('image');
     colorbar('FontSize',12);
-    freezeColors;
     
     subplot_tight(r,c,5); imshow(gt_img(:,:,1));
     subplot_tight(r,c,6); imagesc(gt_img(:,:,2));  axis('image');
     colormap(parula(100));
     colorbar('FontSize',12);
-    freezeColors;
     
     pause;
     close all;

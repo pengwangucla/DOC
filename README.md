@@ -13,7 +13,8 @@ To train and test DOC, we construct an instance occlusion boundary dataset using
 This code has been tested on Linux (Ubuntu 14.04), Matlab 2014b using K40/Titian X GPUs.
 The caffe code is built based on [HED](https://github.com/s9xie/hed),  with extended hdf5 data reader and orientation loss metioned in our paper.
 
-For edge NMS, we take use of that from [edge box](https://github.com/pdollar/edges) and [piotr's toolbox](https://github.com/pdollar/toolbox). If you can not run, please recompile the edge nms part from the source.
+For edge NMS, we take use of that from [edge box](https://github.com/pdollar/edges) and [piotr's toolbox](https://github.com/pdollar/toolbox).
+[lightspeed](http://research.microsoft.com/en-us/um/people/minka/software/lightspeed/) If you can not run, please recompile the edge nms part from the source.
 
 ### PASCAL Instance Occlusion Dataset (PIOD)
 
@@ -23,15 +24,17 @@ The visualization code is developed based on the work of [Hoiem et.al iccv07](ht
 For getting the original images, please download from the PASCAL official website.
 
 ### Demo
+'git clone --recursive https://github.com/pengwangucla/DOC.git'
+
 We release a demo code how to generate occlusion edge maps for a single scale image after the provided the orientation map and edge map.
 
-Please first download the dataset and put it under $root/data/, unzip it
-Download [piotr's toolbox](https://github.com/pdollar/toolbox) to $root/tools/
-Download [edge box](https://github.com/pdollar/edges) and re-compile the boxes.
-then run $root/demo_occ.m
+To run it:
+1. Download the dataset and put it under $root/data/
+2. Download [lightspeed](http://research.microsoft.com/en-us/um/people/minka/software/lightspeed/). Unzip and put it under $root/tools.
+3. mv $root/tools/edge_nms.m $root/tools/piotr_toolbox
+4. open matlab and run $root/demo_occ.m
 
 For extracting the two maps (edge map and orientation map):
-
 For PIOD, we provide pre-trained orientation and edge models for [PIOD](https://drive.google.com/open?id=0B7DaWBKShuMBN0drTzRRMlpoTmc).
 Please use the way you like (either python or matlab) to forward the pre-computed model. With the image transform as HED.
 
