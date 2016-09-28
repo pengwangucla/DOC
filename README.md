@@ -29,9 +29,13 @@ For getting the original images, please download from the PASCAL official websit
 We release a demo code how to generate occlusion edge maps for a single scale image after the provided the orientation map and edge map.
 
 To run it:
+
 1. Download the dataset and put it under $root/data/
+
 2. Download [lightspeed](http://research.microsoft.com/en-us/um/people/minka/software/lightspeed/). Unzip and put it under $root/tools.
+
 3. mv $root/tools/edge_nms.m $root/tools/piotr_toolbox
+
 4. open matlab and run $root/demo_occ.m
 
 For extracting the two maps (edge map and orientation map):
